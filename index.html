@@ -126,6 +126,16 @@
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
+
+    footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
   </style>
 </head>
 
@@ -298,16 +308,17 @@
       fullScreenConfetti();
     });
   </script>
+<footer>
+  © <span id="year"></span> Monkey Kuttan Stories. All Rights Reserved.
+</footer>
 
-   <footer class="site-footer">
-    <p>© <span id="year"></span> Monkey Kuttan Stories. All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  
 </body>
 </html>
+
 
 
 
